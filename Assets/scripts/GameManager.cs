@@ -20,8 +20,6 @@ public class GameManager : MonoBehaviour
     private PokerControll pokerControll;
     private PairControll pairControll;
     private AntoControll antoControll;
-    public static APIForm apiform;
-    public static Globalinitial _global;
     public TMP_Text totalPriceText;
     private float totalValue;
     private int loop = 0;
@@ -30,6 +28,8 @@ public class GameManager : MonoBehaviour
     public Button foldbtn;
     public bool clickflag = true;
 
+    public static APIForm apiform;
+    public static Globalinitial _global;
     [DllImport("__Internal")]
     private static extern void GameReady(string msg);
     BetPlayer _player;
